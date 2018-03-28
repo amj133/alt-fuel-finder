@@ -1,8 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    @stations = NrelStationsByNearest.new(80203).stations
-    # hard-coded zip - couldn't access params
+    @stations = NrelStationsByNearest.new(params["q"].to_i).stations
   end
 
 end
