@@ -1,0 +1,11 @@
+<h3>10 Closest Stations Servign Electric or Propane</h3>
+
+<% @stations.each do |station| %>
+  <ul class="station-info">
+    <li class="station-name"><%= station.name %></li>
+    <li class="station-address"><%= station.address %></li>
+    <li class="station-fuel-types"><%= station.fuel_types %></li>
+    <li class="station-distance"><%= station.distance %></li>
+    <li class="station-access-times"><%= station.access_times %></li>
+  </ul>
+<% end %>

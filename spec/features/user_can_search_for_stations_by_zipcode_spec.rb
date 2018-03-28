@@ -11,7 +11,7 @@ feature "user can search for stations" do
       expect(current_path).to eq(search_path)
       expect(page).to have_content("10 Closest Stations Serving Electric or Propane")
 
-      within(first(".station")) do
+      within(first(".station-info")) do
         expect(page).to have_css(".station-name")
         expect(page).to have_css(".station-address")
         expect(page).to have_css(".station-fuel-types")
