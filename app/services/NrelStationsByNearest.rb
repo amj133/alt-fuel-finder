@@ -1,6 +1,6 @@
 class NrelStationsByNearest
 
-  def initialize(zipcode, distance)
+  def initialize(zipcode, distance = 6)
     @zipcode = zipcode
     @distance = distance
   end

@@ -14,7 +14,7 @@ class SearchController < ApplicationController
     @stations = response[:fuel_stations].map do |station|
       Station.new(station)
     end
-    # @stations = NrelStationsByNearest.new(80203, 6).stations
+    # @stations = NrelStationsByNearest.new(80203).stations
     # hard-coded zip - couldn't access params
   end
 
